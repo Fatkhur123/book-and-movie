@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Api</title>
+        <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <!-- bagian navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">Khakiki | </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-8">
+                <h1 class="text-center">Search Movie</h1>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search the movie..." id="search-input" autofocus>
+                    <button class="btn btn-outline-secondary" type="button" id="search-button">Search!</button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        
+        <div class="row" id="movie-list"></div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://source.unsplash.com/500x600?book" class="card-img-top" alt="...">
+            <div class="position-absolute px-4 py-3 text-white">Web Programming</div>
+            <div class="card-body">
+                <h5 class="card-title">Unit Operations In Chemical Engineering, 5th Edition</h5>
+                <p class="card-text">Ini adalah buku yang bagus untuk dibaca silakan melihat untuk menambah reverensi anda</p>
+                <a href="https://drive.google.com/file/d/1DAQ1qd_sp3Eq1nhva5vSSCtkSGUqb3Y8/view" class="btn btn-primary" target="_blank">See Detail</a>
+            </div>
+        </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
