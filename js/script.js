@@ -2,8 +2,13 @@ function searchMovie(){
     $('#movie-list').html('');
 
     $.ajax({
-        url: 'http://omdbapi.com/apikey=789b5641&s=' + $('#search-input').val(),
+        url: 'http://omdbapi.com/',
+        type: 'get',
         dataType: 'json',
+        data: {
+            'apikey' : '789b5641',
+            's' : $('#search-input').val(),
+        },
         success: function(result){
             if (result.Response == "True"){
                 const movies = result.Search;
